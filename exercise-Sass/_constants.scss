@@ -1,0 +1,19 @@
+/* Mixins */
+@mixin uni-txt {
+  max-width: 700px;
+  text-align: center;
+  padding: $padding-std;
+  font-weight: bold;
+
+  p {
+    text-align: justify;
+    padding-bottom: 1em;
+    line-height: 1.4em;
+  }
+}
+
+/* Variables */
+$light-gr: #c0eea9;
+$dark-gr: #97d279;
+$padding-std: 20px;
+$black: #000000;

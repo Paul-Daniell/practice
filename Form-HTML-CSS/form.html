@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standdard formulier voor re-use</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+  </head>
+  <body>
+    <form enctype="multipart/form-data" method="POST" name="recepren">
+      <input type="hidden" name="form-name" value="recepren" />
+      <p>
+        <label>Naam: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Telefoonnummer: <input type="tel" name="tel" /></label>
+      </p>
+      <p>
+        <label>Leeftijd: <input type="text" name="age" /></label>
+      </p>
+      <p>
+        <label>Geboortedatum: <input type="date" name="date" /></label>
+      </p>
+      <p>Radio button</p>
+      <p>
+        &nbsp;<input type="radio" id="Ja" name="fav_language" value="Ja" />
+        &nbsp; <label for="Ja">Ja</label><br />
+      </p>
+      <p>
+        &nbsp;<input type="radio" id="Nee" name="fav_language" value="Nee" />
+        &nbsp; <label for="Nee">Nee</label><br />
+      </p>
+      <p>checkbox</p>
+      <p></p>
+      &nbsp;
+      <input type="checkbox" id="ja" name="fav_language" value="ja" />
+      &nbsp; <label for="ja">ja</label><br />
+      &nbsp;
+      <input type="checkbox" id="nee" name="fav_language" value="nee" />
+      &nbsp; <label for="nee">nee</label><br />
+
+      <p>Colorpicker</p>
+      <p>
+        <label
+          >Klik op het palet: <input type="color" name="color picker"
+        /></label>
+      </p>
+      <p>
+        <label>Tekstveld: <textarea name="message"></textarea></label>
+      </p>
+      <p>Upload bestand:</p>
+      <p>
+        <label> <input type="file" name="file Upload" /></label>
+      </p>
+      <p>
+        <label>Url naar website: <input type="url" name="url" /></label>
+      </p>
+      <p>
+        <button type="reset">Reset formulier</button>
+      </p>
+      <p>
+        <button type="submit">Verstuur formulier</button>
+      </p>
+    </form>
+  </body>
+</html>
