@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Magic Pseudo's</title>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="application/javascript">
+      $(document).ready(function () {
+        $("ul li a").click(function () {
+          $("li a").removeClass("currentPage");
+          $(this).addClass("currentPage");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div><img src="images/header.png" alt="It's Magic" width="100%" /></div>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Magic Links</a></li>
+              <li><a href="#">Magic Fields</a></li>
+              <li><a href="#">Magic Spell</a></li>
+              <li>
+                <input placeholder="Find-Magic" type="search" name="Search" />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content-left">
+          <a href="#" class="hover"
+            ><p>Hover over me and I will turn</p>
+            <p>light blue and bold!</p></a
+          >
+          <br />
+          <a href="#" class="active"
+            ><p>Click on me and I will turn</p>
+            <p>red and Italic!</p></a
+          >
+          <br />
+          <a href="index.html" class="visited"
+            ><p>I'll show you that you visited me</p>
+            <p>by turning Yellow!</p></a
+          >
+        </div>
+        <div><img src="images/content-right.jpg" alt="" width="100%" /></div>
+        <div>
+          <input
+            type="text"
+            name="Green focus"
+            value="The text you type here will be green and 20px!"
+            class="focus"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
