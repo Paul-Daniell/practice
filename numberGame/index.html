@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="btn new-game">Nieuw Spel</button>
+      <p id="welcome"></p>
+      <div class="high-score">
+        <ion-icon name="trophy"></ion-icon>
+        High Score:
+        <span class="current-high-score">0</span>
+      </div>
+    </header>
+    <section class="main-section">
+      <h1>Raad mijn nummer !</h1>
+      <br /><br />
+      <p class="message">
+        Welk getal staat er achter het vraagteken, raad jij het? ( 1 - 25)
+      </p>
+      <div class="secret-number">?</div>
+    </section>
+    <br />
+    <section class="input-section">
+      <input
+        type="number"
+        class="input-number"
+        placeholder="Voer je nummer in"
+      />
+      <br />
+      <br />
+      <button class="btn btn-check">Bekijk antwoord</button>
+    </section>
+    <br />
+    <section class="score-section">
+      <div class="score-div">
+        <p>Huidige Score: <span id="current-score">20</span></p>
+        <p>Pogingen Over: <span id="attempts-left">5</span></p>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
