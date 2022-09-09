@@ -11,19 +11,19 @@ let newGamebtn = document.querySelector(".new-game");
 
 // All global variables.
 let secretNumber = Math.trunc(Math.random() * 25) + 1;
-console.log(secretNumber);
+// console.log(secretNumber);
 let currentScore = 20;
 let attemptsLeft = 5;
 let highScore = 0;
 let userName;
 
-// while (userName === undefined || userName === null || userName.length === 0) {
-//   userName = prompt("Hoi, wat is je naam?");
-// }
-// if (userName != null) {
-//   document.getElementById("welcome").innerHTML =
-//     "Welkom " + userName + "! Zin in een spelletje?";
-// }
+while (userName === undefined || userName === null || userName.length === 0) {
+  userName = prompt("Hoi, wat is je naam?");
+}
+if (userName != null) {
+  document.getElementById("welcome").innerHTML =
+    "Welkom " + userName + "! Zin in een spelletje?";
+}
 
 checkBtn.addEventListener("click", function () {
   if (attemptsLeft > 0) {
@@ -62,13 +62,15 @@ checkBtn.addEventListener("click", function () {
         messageEl.textContent = message;
         currentScore--;
         currentScoreEl.textContent = currentScore;
-      } else {
+      }
+      if (attemptsLeft === 0) {
         messageEl.textContent =
           "Helaas je hebt het spel verloren " +
           userName +
-          "!" +
+          "! " +
           "Verbeter je highscore of anders een fijne dag gewenst!";
         currentScoreEl.textContent = 0;
+        secretNumberEl.textContent = secretNumber;
         body.style.backgroundColor = "#dc143c";
       }
     }
